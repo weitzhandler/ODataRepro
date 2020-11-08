@@ -14,6 +14,8 @@ namespace ODataRepro
             services
                 .AddDbContext<AppDbContext>();
 
+            services.AddControllers();
+
             ConfigureOData(services);
         }
 
