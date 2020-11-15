@@ -36,7 +36,8 @@ namespace ODataRepro
                 .OrderBy()
                 .SetMaxTop(128)
                 .Count()
-                .AddModel(edmModel));
+                //.AddModel(edmModel));
+                .AddModel("api", edmModel));
 
             services.AddOData();
         }
